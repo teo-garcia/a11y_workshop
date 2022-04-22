@@ -1,13 +1,73 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import '~modern-normalize';
+
+:root {
+  --color-text: hsl(209, 33%, 12%);
+  --color-background: hsl(0, 0%, 100%);
+  --color-neutral: hsl(0, 0%, 80%);
+  --color-primary: hsl(212, 91%, 50%);
+  --color-secondary: hsl(223, 100%, 88%);
+  --font-regular: 'Ubuntu';
+  --font-bold: 'Ubuntu';
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-xs: 1.6rem;
+  --font-s: 2rem;
+  --font-m: 2.5rem;
+  --font-l: 3rem;
+  --font-xl: 4rem;
+  --font-xxl: 5rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-regular);
+  font-weight: var(--font-weight-regular);
+  background-color: var(--color-white);
+  color: var(--color-black);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-regular);
+  font-weight: var(--font-weight-bold);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+button {
+  border: none;
+}
+
+#root {
+  isolation: isolate;
+  height: 100%;
 }
