@@ -1,38 +1,32 @@
+import './Intro.css';
 import { Link } from 'react-router-dom';
-import styles from './Intro.module.css';
-import modules from '../../lib/modules';
+import routes from '../../lib/data/routes';
+import useDocumentTitle from '../../lib/hooks/useDocumentTitle';
 
 function Intro() {
+  // Establish page title
+  useDocumentTitle('Intro');
+
   return (
-    <main className={styles.container}>
-      <section className={styles.info}>
-        <h1 className={styles.title}>A11y Workshop</h1>
-        <h2 className={styles.subtitle}>Ejercicios disponibles:</h2>
-        <ol className={styles.outerList}>
-          {modules.map((module) => (
-            <li className={styles.outerItem} key={module.topic}>
-              <h3>{module.topic}</h3>
-              <ol className={styles.innerList}>
-                {module.exercises.map((exercise) => (
-                  <li
-                    className={styles.innerItem}
-                    key={exercise.title}
-                  >
-                    <Link to={exercise.path} className={styles.link}>
-                      {exercise.title}
-                    </Link>
-                  </li>
-                ))}
-              </ol>
+    <main className="container">
+      <section className="info">
+        <h1 className="title">Accessibility Workshop</h1>
+        <h2 className="subtitle">Challenges:</h2>
+        <ol className="list">
+          {routes.map((exercise) => (
+            <li className="item" key={exercise.title}>
+              <Link to={exercise.path} className="link">
+                {exercise.title}
+              </Link>
             </li>
           ))}
         </ol>
       </section>
       <section>
         <img
-          className={styles.img}
+          className="img"
           alt="Mesa con cuadernos y lapiceros"
-          src="https://images.pexels.com/photos/5905443/pexels-photo-5905443.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          src="https://images.pexels.com/photos/4012966/pexels-photo-4012966.jpeg"
         />
       </section>
     </main>

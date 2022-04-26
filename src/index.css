@@ -2,21 +2,21 @@
 @import '~modern-normalize';
 
 :root {
-  --color-text: hsl(209, 33%, 12%);
-  --color-background: hsl(0, 0%, 100%);
+  --color-text:  #000000;
+  --color-background:  #FFFFFF;
   --color-neutral: hsl(0, 0%, 80%);
-  --color-primary: hsl(212, 91%, 50%);
-  --color-secondary: hsl(223, 100%, 88%);
+  --color-primary: #6200EA;
+  --color-secondary: #7c4dff;
   --font-regular: 'Ubuntu';
   --font-bold: 'Ubuntu';
   --font-weight-regular: 400;
   --font-weight-bold: 700;
   --font-xs: 1.6rem;
-  --font-s: 2rem;
-  --font-m: 2.5rem;
-  --font-l: 3rem;
-  --font-xl: 4rem;
-  --font-xxl: 5rem;
+  --font-s: 1.8rem;
+  --font-m: 3rem;
+  --font-l: 4rem;
+  --font-xl: 5rem;
+  --font-xxl: 6rem;
 }
 
 *,
@@ -38,8 +38,8 @@ html, body {
 body {
   font-family: var(--font-regular);
   font-weight: var(--font-weight-regular);
-  background-color: var(--color-white);
-  color: var(--color-black);
+  background-color: var(--color-background);
+  color: var(--color-text);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -52,6 +52,7 @@ h5,
 h6 {
   font-family: var(--font-family-regular);
   font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
 }
 
 img, picture, video, canvas, svg {
