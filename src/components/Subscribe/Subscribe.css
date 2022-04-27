@@ -1,0 +1,83 @@
+.main-wrapper {
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 100px 0;
+  gap: 240px;
+}
+
+.subscribe-info {
+  width: 400px;
+}
+
+.subscribe-title {
+  font-size: var(--font-l);
+  color: var(--color-background);
+  font-weight: var(--font-bold);
+  text-align: center;
+}
+
+.subscribe-description {
+  color: var(--color-background);
+  font-size: var(--font-m);
+  text-align: center;
+  margin: 16px 0;
+}
+
+
+.form {
+  width: 300px;
+  padding: 32px 16px;
+  background-color: var(--color-background);
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 16px;
+}
+
+.label-text,
+.legend-checkbox {
+  color:var(--color-primary);
+  font-weight: var(--font-bold);
+  font-size: var(--font-s);
+  margin-bottom: 4px;
+}
+
+.label-checkbox {
+  margin: 0 12px 0 4px;
+  font-size: var(--font-xs);
+}
+
+.input-text {
+  font-size: var(--font-xxs);
+  border-radius: 4px;
+  border: 2px solid var(--color-neutral);
+  padding: 4px 8px;
+} 
+
+.fieldset-text,
+.fieldset-checkbox {
+  border: none;
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.fieldset-text {
+  flex-flow: column;
+}
+
+.fieldset-checkbox {
+  align-items: center;
+}
+
+
+.form-button {
+  background-color: var(--color-secondary);
+  color: var(--color-background);
+  padding: 4px 32px;
+  border-radius: 8px;
+  font-size: var(--font-s);
+}

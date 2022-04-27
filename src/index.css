@@ -4,18 +4,18 @@
 :root {
   --color-text:  #000000;
   --color-background:  #FFFFFF;
-  --color-neutral: hsl(0, 0%, 80%);
+  --color-neutral: hsl(0, 0%, 60%);
   --color-primary: #6200EA;
-  --color-secondary: #7c4dff;
-  --font-regular: 'Ubuntu';
-  --font-bold: 'Ubuntu';
-  --font-weight-regular: 400;
-  --font-weight-bold: 700;
-  --font-xs: 1.6rem;
-  --font-s: 1.8rem;
-  --font-m: 3rem;
-  --font-l: 4rem;
-  --font-xl: 5rem;
+  --color-secondary: #7C4DFF;
+  --font-primary: 'Ubuntu';
+  --font-secondary: 'Ubuntu';
+  --font-regular: 400;
+  --font-bold: 700;
+  --font-xs: 1.4rem;
+  --font-s: 1.6rem;
+  --font-m: 1.8rem;
+  --font-l: 3rem;
+  --font-xl: 4rem;
   --font-xxl: 6rem;
 }
 
@@ -36,8 +36,8 @@ html, body {
 }
 
 body {
-  font-family: var(--font-regular);
-  font-weight: var(--font-weight-regular);
+  font-family: var(--font-primary);
+  font-weight: var(--font-regular);
   background-color: var(--color-background);
   color: var(--color-text);
   line-height: 1.5;
@@ -51,7 +51,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-family-regular);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-bold);
   color: var(--color-primary);
 }
 

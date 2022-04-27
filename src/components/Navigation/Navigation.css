@@ -1,0 +1,22 @@
+.navigation {
+  align-items: center;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 64px;
+}
+
+
+.navigation-title {
+  color:var(--color-background);
+  font-weight: var(--font-bold);
+  font-size: var(--font-xl);
+}
+
+
+.navigation-link {
+  color:var(--color-background);
+  font-size: var(--font-m);
+  margin-right: 16px;
+}

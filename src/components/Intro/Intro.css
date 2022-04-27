@@ -34,7 +34,7 @@
 
 .item {
   font-size: var(--font-l);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-bold);
   margin: 0 0 48px;
 }
 
